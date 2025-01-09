@@ -10,8 +10,31 @@
     <body>
         <h1>市川天文台</h1>
 
-        <button onclick="location.href='./index.html'">もどる</button>
+        <from>
+            <fieldset>
+                <legend>イベント申し込みフォーム</legend>
+                <div>
+                    <input type="radio" id="contactChoice1" name="contact">
+                    <label for="contactChoice1">星空観察会</label>
 
-        <h7>この天文台は実在しません</h7>
+                    <input type="radio" id="contactChoice2" name="contact">
+                    <label for="contactChoice2">館長の話を聞く会</label>
+                </div>
+                <div>
+                    電話番号
+                    <input type="text">
+                </div>        
+            </fieldset>
+            <input type="submit" value="送信" onclick="send()">
+
+            <script>
+                function send(){
+                    alert("できませんでした")
+                }
+            </script>
+        </from>
+        <button onclick="Location.href='./index.html'">もどる</button>
+
+        <h6>この天文台は実在しません</h6>
     </body>
 </html>
